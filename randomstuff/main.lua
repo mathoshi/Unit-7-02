@@ -6,7 +6,9 @@
 -- This will implement a d-pad to move a sprite
 -----------------------------------------------------------------------------------------
 
-local background = display.setDefault( "background", )
+local background = display.newImageRect( "assets/substreet.png", 1920, 1080)
+background.x = display.contentCenterX
+background.y = display.contentCenterY
 
 local rightRect = display.newRoundedRect( 270, 480, 80, 60, 10)
 rightRect:setFillColor( 1, 1, 1)
